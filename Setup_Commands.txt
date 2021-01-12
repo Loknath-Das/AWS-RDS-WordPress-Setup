@@ -1,0 +1,16 @@
+This Setup is Done inside RedHat8(RHEL8)
+
+Commands To Install PHP,Apache server,SQL:
+# yum install php-mysqlnd php-fpm mariadb-server httpd tar curl php-json wget -y
+# sudo amazon-linux-extras install php7.3
+
+Commands To Download WordPress:
+# curl https://wordpress.org/latest.tar.gz --output wordpress.tar.gz
+# tar xf wordpress.tar.gz -C /var/www/html or tar xf wordpress.tar.gz
+
+To Start Webserver:
+# systemctl status httpd
+# systemctl start httpd
+# systemctl enable httpd 
+
+Create AWS RDS -> MysQLDatabase and connect the Endpoint inside wp-config.php file 
